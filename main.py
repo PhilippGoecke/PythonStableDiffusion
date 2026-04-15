@@ -38,5 +38,5 @@ pipe = pipeline_class.from_pretrained(MODEL_ID, torch_dtype=torch.float16, varia
 pipe.to(device)
 
 # Generate and save
-image = pipe(PROMPT).images[0]
+image = pipe(PROMPT, height=512, width=512).images[0]
 image.save(OUTPUT_FILE)
