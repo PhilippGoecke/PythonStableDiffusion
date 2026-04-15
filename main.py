@@ -4,7 +4,6 @@ import torch
 # Configuration
 MODEL_ID = "stabilityai/sdxl-turbo"
 # Alternative models:
-# MODEL_ID = "black-forest-labs/FLUX.1-dev"
 # MODEL_ID = "stabilityai/stable-diffusion-xl-base-1.0"
 # MODEL_ID = "runwayml/stable-diffusion-v1-5"
 
