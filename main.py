@@ -4,7 +4,6 @@ import torch
 # Configuration
 MODEL_ID = "stabilityai/sdxl-turbo"
 # Alternative models:
-# MODEL_ID = "stabilityai/stable-diffusion-3-medium"
 # MODEL_ID = "black-forest-labs/FLUX.1-dev"
 # MODEL_ID = "stabilityai/stable-diffusion-xl-base-1.0"
 # MODEL_ID = "runwayml/stable-diffusion-v1-5"
@@ -16,7 +15,6 @@ OUTPUT_FILE = "output.png"
 MODEL_PIPELINES = {
     "stabilityai/sdxl-turbo": StableDiffusionXLPipeline,
     "stabilityai/stable-diffusion-xl-base-1.0": StableDiffusionXLPipeline,
-    "stabilityai/stable-diffusion-3-medium": DiffusionPipeline,
     "black-forest-labs/FLUX.1-dev": DiffusionPipeline,
     "runwayml/stable-diffusion-v1-5": StableDiffusionPipeline,
 }
