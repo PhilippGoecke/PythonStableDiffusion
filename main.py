@@ -6,17 +6,13 @@ MODEL_ID = "stabilityai/sdxl-turbo"
 # Alternative models:
 # MODEL_ID = "stabilityai/stable-diffusion-xl-base-1.0"
 # MODEL_ID = "runwayml/stable-diffusion-v1-5"
-# MODEL_ID = "black-forest-labs/FLUX.1-dev"
-# MODEL_ID = "mistralai/Mistral-7B-v0.1"
 PROMPT = "A futuristic cyberpunk city at night with neon lights, detailed, 4k, cinematic lighting, rain reflections, flying cars, holographic billboards, cyberpunk aesthetic"
 OUTPUT_FILE = "output.png"
 
 MODEL_PIPELINES = {
     "stabilityai/sdxl-turbo": StableDiffusionXLPipeline,
     "stabilityai/stable-diffusion-xl-base-1.0": StableDiffusionXLPipeline,
-    "black-forest-labs/FLUX.1-dev": DiffusionPipeline,
     "runwayml/stable-diffusion-v1-5": StableDiffusionPipeline,
-    "mistralai/Mistral-7B-v0.1": DiffusionPipeline,
 }
 
 def get_device():
